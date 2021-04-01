@@ -1,0 +1,42 @@
+html{
+    height: 100%;
+  }
+  
+  body{
+      background-image: url("../assets/BEV2.jpeg");
+      
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 100%;
+         background-size: cover;
+         
+        }
+       
+  
+   .text{
+    color: rgb(64, 71, 69);
+      position: relative;
+     
+      
+      margin-right: 40%;
+    
+     }
+   .main{
+      text-align: center;
+    color: rgb(64, 71, 69);
+  }
+  main,a{
+    color:rgb(64, 71, 69);
+  }
+  img{
+    border-image: auto;
+  }
+  img {
+    width: 150px;
+    aspect-ratio: auto 50/50;
+    border: darkslategray;
+    border-bottom: 10%;
+    border-radius: 50%;
+    
+    height: 120px;
+}
