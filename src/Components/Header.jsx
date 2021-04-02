@@ -5,7 +5,7 @@ export default function Header() {
           <article>
           <header>
           <h1 >Welcome to the AHL package services</h1>
-          <img src={imageURL} alt="this is the logo" width="150" height= "150"/>
+          <img class ="image" src={imageURL} alt="this is the logo" width="150" height= "150"/>
           
           </header> </article>
         );
