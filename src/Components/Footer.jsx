@@ -4,9 +4,9 @@ export default function Footer() {
       <article>
       
       <footer class ="footer">
-    <p>© 2021  Munamii Cakery, All rights reserved.</p>
-    <p id="element">Reach out us via</p>
-    <ul >
+    <p class="page">© 2021 Fast Delivery services, All rights reserved.</p>
+    
+    {/* <ul >
        <li>
            <a href="mailto:munamiicakes@gmail.com">Munamii-email </a>
         </li>
@@ -14,7 +14,7 @@ export default function Footer() {
             <li><a href= "https://www.facebook.com/munamiicupcakes/">Munamii-facebook</a></li>
 
         
-    </ul>
+    </ul> */}
 </footer>
     </article>
     );
