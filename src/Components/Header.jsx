@@ -10,7 +10,7 @@ export default function Header() {
   console.log(location);
   return (
     <header className="header">
-      <h1 class="hItem1">Fast Delivery Services</h1>
+      <h1 class="hItem1">Fast Delivery App</h1>
       
       <ul className="hItem" >
         <div>
