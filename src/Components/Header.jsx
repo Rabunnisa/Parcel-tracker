@@ -1,12 +1,23 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function Header() {
-    const imageObject =require("../assets/logo.jpg");
-    const imageURL=imageObject.default;
-        return (
-          <article>
-          <header>
-          <h1 >Welcome to the AHL package services</h1>
-          <img class ="image" src={imageURL} alt="this is the logo" width="150" height= "150"/>
-          
-          </header> </article>
-        );
-      }
+  const location = useLocation();
+
+  
+
+  console.log(location);
+  return (
+    <header className="header">
+      <h1 className="hItem1">Package Tracking App</h1>
+      
+      <ul className="hItem" >
+        <div>
+          <Link to="/">Home</Link>
+        </div>
+        <div>
+          <Link to="/packagetrack">Parcels/orders</Link>
+        </div>
+      </ul>
+    </header>
+  );
+}

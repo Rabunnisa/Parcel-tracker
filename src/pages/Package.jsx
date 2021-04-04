@@ -1,10 +1,13 @@
-import "../styles/package.css";
-export default function Package(data){
-    return(
-<div class="package">
-    <h1>Here is the list of orders/parcels </h1>
-    {data.data.map(p=><div>{p.sender}</div>)}
-    </div>
-    )
+import PackageFetch from "./PackageFetch"
 
+
+export default function Package() {
+
+    return(
+        <div>
+            <h2>Here is the list of packages </h2>
+            <h3>User Name :John Doe </h3>
+<PackageFetch/>
+        </div>
+    )
 }

@@ -1,17 +1,14 @@
-/* eslint-disable import/no-anonymous-default-export */
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
-
-import "../styles/header.css"
-import "../styles/footer.css"
-export default function Home()
-{
-    return(
-        <div className="test">
-        <Header/>
-        <body class = "home"/>
-        <Footer/> 
-        </div>
-    )
+export default function Home() {
+  return (
+    <section className="home">
+      <h2>Our solutions connect people and possibilities.</h2>
+      <div>Connecting people with goods, services and ideas creates opportunities and improves lives. We believe that a connected world is a better world, and that belief guides everything we do.</div>
+      <Link className="link" to="/packagetrack">
+        Click Here to package
+      </Link>
+      <div>Home</div>
+    </section>
+  );
 }

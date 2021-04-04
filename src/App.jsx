@@ -1,49 +1,35 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
-import { useEffect ,useState} from "react";
-
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./pages/Home";
 import Package from "./pages/Package"
+import "./styles/styles.css"
 
-export default function App() {
-const [status ,setStatus]= useState(0);
-const[data,setData]=useState([]);
 
-const API_URL = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
 
-useEffect( () =>{
-fetch(API_URL)
-.then((response) => response.json())
-.then(data=>onFetchSuccess(data))
-.catch(onFetchFail);
-},[]);
 
-function onFetchSuccess(json){
-  setData(json);
-  setStatus(2);
-  data.forEach(p=>console.log(p.sender))
-}
+  export default function App() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/packagetrack" exact component={Package} />
+            
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </div>
+    );
+  }
 
-function onFetchFail(error){
-  console.error("Hello,we have an error :(", error);
-  setStatus(1);
-}
 
-return (
-    <div className="App">
-      
-      <BrowserRouter>
-        {/* The header is outside the Switch to make it available all the time */}
-         <Switch>
-          <Route component={Home} path="/" exact />
-          <Route path="/p" ><Package data={data}/> </Route>
-          {/* <Route component={Video} path="/video/:id" /> */}
-          {/* <Route component={SearchResults} path="/results/:query" /> */}
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
-}
+
+
+
+
+
+
