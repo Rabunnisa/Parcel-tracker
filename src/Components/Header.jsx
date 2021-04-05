@@ -12,14 +12,14 @@ export default function Header() {
     <header className="header">
       <h1 class="hItem1">Fast Delivery App</h1>
       
-      <ul className="hItem" >
-        <div>
+      <div class="linkItems" >
+        <li>
           <Link to="/">Home</Link>
-        </div>
-        <div>
-          <Link to="/packagetrack">Parcels/orders</Link>
-        </div>
-      </ul>
+        </li>
+        <li>
+          <Link to="/packagetrack">Packages</Link>
+          </li>
+      </div>
       <div class="hItem2">
         <p>Welcome Jhon Doe</p>
       </div>
