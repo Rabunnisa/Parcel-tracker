@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import Home from "./pages/Home";
 import Package from "./pages/Package"
 import "./styles/styles.css"
