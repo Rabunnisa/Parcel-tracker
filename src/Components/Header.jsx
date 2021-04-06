@@ -9,7 +9,9 @@ export default function Header() {
 
   console.log(location);
   return (
+    
     <header className="header">
+      <div class="head">
       <h1 class="hItem1">Fast Delivery App</h1>
       
       <div class="linkItems" >
@@ -26,7 +28,7 @@ export default function Header() {
       <div class="p3">
       <img class ="p4"src={imageURL} alt="this is the logo" width="60" height= "60"/>
       </div>
-      
+      </div>
     </header>
   );
 }

@@ -3,6 +3,7 @@ export default function Package() {
 return(
        
         <section>
+            <div class="Body-package">
             <h3> Here is your list of packages</h3>
        <ul class="item">
        <li class="t1">Package Id</li>
@@ -17,6 +18,7 @@ return(
 
       
        <PackageFetch/>
+       </div>
     </section>
 
        
