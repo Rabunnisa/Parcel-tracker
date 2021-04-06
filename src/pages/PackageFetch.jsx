@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect ,useState} from "react";
-import PackageItem from "../components/PackageItem"
+import PackageItem from "../Components/PackageItem"
 export default function PackageFetch () {
 
     const[data,setData]=useState([]);
